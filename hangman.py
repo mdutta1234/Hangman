@@ -1,14 +1,4 @@
-# Problem Set 2, hangman.py
-# Name: 
-# Collaborators:
-# Time spent:
 
-# Hangman Game
-# -----------------------------------
-# Helper code
-# You don't need to understand this helper code,
-# but you will have to know how to use the functions
-# (so be sure to read the docstrings!)
 import random
 import string
 
@@ -42,12 +32,7 @@ def choose_word(wordlist):
     """
     return random.choice(wordlist)
 
-# end of helper code
 
-# -----------------------------------
-
-# Load the list of words into the variable wordlist
-# so that it can be accessed from anywhere in the program
 wordlist = load_words()
 
 
@@ -307,26 +292,13 @@ def hangman_with_hints(secret_word):
 
 
 
-# When you've completed your hangman_with_hint function, comment the two similar
-# lines above that were used to run the hangman function, and then uncomment
-# these two lines and run this file to test!
-# Hint: You might want to pick your own secret_word while you're testing.
 
 
 if __name__ == "__main__":
-    # pass
 
-    # To test part 2, comment out the pass line above and
-    # uncomment the following two lines.
     
     secret_word = choose_word(wordlist)
-#    hangman(secret_word)
+
 hangman_with_hints(secret_word)
 
-###############
-    
-    # To test part 3 re-comment out the above lines and 
-    # uncomment the following two lines. 
-    
-    #secret_word = choose_word(wordlist)
-    #hangman_with_hints(secret_word)
+
